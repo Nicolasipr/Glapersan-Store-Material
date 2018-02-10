@@ -18,6 +18,15 @@
 
     <title>Glapersan | Contacto</title>
 
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            display: block;
+        }
+    </style>
+
+
 </head>
 
 <!--                                                     BARRA DE NAVEGACION-->
@@ -51,217 +60,277 @@
 </ul>
 <!-- FIN DROPDOWN PRODUCTOS -->
 
-<nav>
-    <div class="nav-wrapper light-blue darken-1">
+<div class="fixed-navbar">
 
-        <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
+    <nav>
+        <div class="nav-wrapper light-blue darken-1">
 
-            <div class="row container">
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
 
-        </a>
-        <a href="index.html" class="brand-logo center logo1">
-            <img src="fotos/logo-blanco2.png" width="60%" height="60%">
-        </a>
+                <div class="row container">
 
-        <!--                        PARTE DE LA IZQUIERDA -->
+            </a>
+            <a href="index.html" class="brand-logo responsive-img center">
+                <img src="fotos/logo-blanco2.png" width="100" height="100%">
+            </a>
 
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
+            <!--                        PARTE DE LA IZQUIERDA -->
 
-            <li>
-                <a href="empresa.html">Empresa</a>
-            </li>
-
-            <li>
-                <a href="" class="dropdown-button" data-activates="dropdown1">Productos
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">Contacto</a>
-            </li>
-        </ul>
-
-        <!--                                                                         SIDE NAV -->
-
-
-        <ul id="mobile-demo" class="side-nav">
-
-            <div class="center logo1">
-                <a id="logo1" href="index.html">
-                    <img src="fotos/logo.png" width="50%" height="50%">
-                </a>
-            </div>
-            <li class="divider"></li>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-
-            <li>
-                <a href="empresa.html">Empresa</a>
-            </li>
-            <ul class="collapsible" data-collapsible="accordion">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li>
-                    <div class="collapsible-header">
-                        <a href="#" class="black-text">Productos
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Insumos Medicos
+                    <a href="#">Inicio</a>
+                </li>
 
-                            </a>
-                        </span>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Incontenencia</a>
-                        </span>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Envases de Alimentos</a>
-                        </span>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Articulos de Oficina</a>
-                        </span>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Articulos de Aseo</a>
-                        </span>
-                    </div>
-                    <div class="collapsible-body black-text">
-                        <span>
-                            <a href="#" class="black-text">Pedidos Especiales</a>
-                        </span>
-                    </div>
+                <li>
+                    <a href="empresa.html">Empresa</a>
+                </li>
 
+                <li>
+                    <a href="" class="dropdown-button" data-activates="dropdown1">Productos
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
 
+            <!--                                                                         SIDE NAV -->
 
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
 
-        </ul>
+            <ul id="mobile-demo" class="side-nav">
 
-        <!--                                                            END SIDE NAV -->
+                <div class="responsive-img center logo1">
+                    <a id="logo1" href="index.html">
+                        <img src="fotos/logo.png" width="60%" height="60%">
+                    </a>
+                </div>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
 
-        <!--                                                          FIN PARTE DE LA IZQUIERDA -->
+                <li>
+                    <a href="empresa.html">Empresa</a>
+                </li>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <a href="#" class="black-text">Productos
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Insumos Medicos
 
-        <!--                                                             PARTE DERECHA -->
+                                </a>
+                            </span>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Incontenencia</a>
+                            </span>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Envases de Alimentos</a>
+                            </span>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Articulos de Oficina</a>
+                            </span>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Articulos de Aseo</a>
+                            </span>
+                        </div>
+                        <div class="collapsible-body black-text">
+                            <span>
+                                <a href="#" class="black-text">Pedidos Especiales</a>
+                            </span>
+                        </div>
 
-        <ul id="nav-mobile" class="right">
-            <li>
-                <a href="#" class="search-button">
-                    <i class="material-icons">search</i>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="shoppin-cart-button" data-activates="carrito1">
-                    <i class="material-icons right">shopping_cart</i>
-                </a>
-            </li>
+                    </li>
+                </ul>
 
-        </ul>
-        <!-- FIN PARTE DERECHA -->
+
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+
+            <!--                                                            END SIDE NAV -->
+
+            <!--                                                          FIN PARTE DE LA IZQUIERDA -->
+
+            <!--                                                             PARTE DERECHA -->
+
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a href="#" class="search-button">
+                        <i class="material-icons">search</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="shoppin-cart-button" data-activates="carrito1">
+                        <i class="material-icons right">shopping_cart</i>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- FIN PARTE DERECHA -->
+            </div>
+
+
         </div>
 
+    </nav>
+    <!--                                                    END BARRA DE NAVEGACION -->
+
+
+
+    <div id="map"></div>
+
+
+    <div class="card levantar">
+        <div class="contenido-contactanos">
+            <div class="container">
+                <h4 style="margin-left:-10px">Envíanos Un Mensaje</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="grey-text lighten-3">Consulta acerca de nuestros productos y precios
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="input-field col s4">
+                        <input placeholder="" id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="" id="email" type="email" class="validate">
+                        <label for="email" data-error="Correo electrónico no valido" data-success="">Correo Electronico</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="" id="phone_number" type="text" class="validate">
+                        <label for="phone_number">Número de Teléfono</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Comentario</label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-</nav>
-<!--                                                    END BARRA DE NAVEGACION -->
 
 
-<!--                                                            FOOTER-->
+    <main>
 
-<main>
+    </main>
 
-</main>
-
-<footer class="page-footer light-blue darken-1">
-    <div class="container">
-        <div class="row">
-            <div class="col 3 s3">
-                <img src="fotos/logo-blanco2.png" class="logo1" width="50%" height="50%">
-                <p class="white-text text-lighten-4">Nace en 1985 con el objetivo de entregar soluciones de productos y servicios a clínicas y hospitales, a través
-                    de proveedores de excelencia que satisfagan las exigencias de calidad y costos de todos nuestros clientes</p>
-            </div>
-
-            <div class="col 3 s3">
-                <h6>Navegación Rapida</h6>
-                <div class="divider"></div>
-                <ul>
-                    <li>
-                        <a href="" class="white-text lighthen-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repellendus atque incidunt soluta corporis sequi perferendis, inventore non nobis exercitationem
-                             impedit officia aperiam, provident eveniet architecto voluptatum et similique nemo possimus.
-                        
-                        </a>
-                    </li>
-                    </ul>
-
-            </div>
-            <div class="col 3 s3">
-                <ul>
-                    <li>
-                        <a href="" class="white-text lighthen-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit voluptate, at pariatur soluta error laborum similique et reprehenderit natus quasi facilis aspernatur perspiciatis blanditiis cupiditate unde adipisci? Doloribus, modi voluptates.</a>
-                    </li>
-                </ul>
-                
-            </div>
-            <div class="col 3 offset-6 s3">
-                <h5>Contáctenos</h5>
-                <ul class="right">
-                    <li>
-                        <a class="white-text lighthen-3" href="#!">Julio Martínez P, 1322-B, Independencia
-                            <i class="material-icons">location_city</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text lighthen-3" href="#!">02 22324699
-                            <i class="material-icons">local_phone</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text lighthen-3" href="#!">glapersan@glapersan.cl
-                            <i class="material-icons">mail</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="page-footer light-blue darken-1">
         <div class="container">
-            <a class="grey-text text-lighten-4 left">© 2018 Todos Los Derechos Reservados.</a>
-            <a class="grey-text text-lighten-4 right" href="#!">glapersan@glapersan.cl</a>
+            <div class="row">
+                <div class="col 16 s4">
+                    <img src="fotos/logo-blanco2.png" class="responsive-img logo1" width="auto" height="100%">
+                    <p class="white-text text-lighten-4">Nace en 1985 con el objetivo de entregar soluciones de productos y servicios a Clínicas y Hospitales,
+                        a través de Proveedores de excelencia que satisfagan las exigencias de calidad y costos de todos
+                        nuestros Clientes</p>
+                </div>
+                <div class="col 16 s4">
+                    <h5 class="center">Navegacion</h5>
+                    <ul>
+                        <li>
+                            <a href="" class="white-text lighthen-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates explicabo atque repudiandae
+                                consequatur ad sequi quos laudantium ea modi debitis. Facilis nemo, explicabo eaque recusandae
+                                quo ipsum illum. Rem, et.</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col 16 offset-12 s4">
+                    <h5>Contáctenos</h5>
+                    <ul class="right">
+                        <li>
+                            <a class="white-text lighthen-3" href="#!">Julio Martínez P, 1322-B, Independencia
+                                <i class="material-icons">location_city</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="white-text lighthen-3" href="#!">02 22324699
+                                <i class="material-icons">local_phone</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="white-text lighthen-3" href="#!">glapersan@glapersan.cl
+                                <i class="material-icons">mail</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="footer-copyright">
+            <div class="container">
+                <a class="grey-text text-lighten-4 left">© 2018 Todos Los Derechos Reservados.</a>
+                <a class="grey-text text-lighten-4 right" href="#!">glapersan@glapersan.cl</a>
+            </div>
+        </div>
+    </footer>
 
-<!--                                                     END FOOTER -->
+    <body>
 
-<body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.parallax').parallax();
+            });
+        </script>
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script> $(document).ready(function () { $('.parallax').parallax(); }); </script>
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
+        <!-- Google MAPS -->
+        <script>
+            function initMap() {
+                var location = {
+                    lat: -33.4057178,
+                    lng: -70.6607817
+                };
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 17,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdorckV2L-WFMSqFuYj365VLR8xZc_VDI&callback=initMap">
+        </script>
 
-</body>
+
+    </body>
 
 </html>
